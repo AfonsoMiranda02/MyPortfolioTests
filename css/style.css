@@ -21,6 +21,12 @@
     --radius-xl: 29px;
     --green: #0F8413;
     --greenOp: rgb(15,132,19,0.33);
+    --yellow: #D8E248;
+    --yellowOp: rgb(216,226,72,0.33);
+    --blue: #3A59D8;
+    --blueOp: rgb(58,89,216,0.33);
+    --red: #DD3B3B;
+    --redOp: rgb(221,59,59,0.33);
 }
 
 
@@ -31,6 +37,32 @@
 /*?------------------------ */
 /*?Tags */
 /*?------------------------ */
+
+.TagsTitle{
+    font-family: "Inter", "semi-bold";
+    font-size: 29px;
+    color: var(--buttonHighlights);
+    margin-left: 60px;
+    grid-column: 1/11;
+    grid-row: 1/2;
+}
+
+.tagsBody{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(10,1fr);
+}
+
+.tagsPos{
+    display: flex;
+    grid-column: 1/11;
+    grid-row: 2/11;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-left: 60px;
+}
+
+/** Green Tag **/
 
 .greenCircleSmall{
     margin-left: 2px;
@@ -76,6 +108,157 @@
     border-radius: var(--radius-xl);
     color: var(--text);
 }
+
+/** Green Tag END **/
+
+/** Yellow Tag **/
+
+.yellowCircleSmall{
+    margin-left: 2px;
+    width: 11px;
+    height: 11px;
+    background-color: var(--yellow);
+    border-radius: 100%;
+}
+
+
+.yellowTagSmall{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3px;
+    width: 88px;
+    height: 17px;
+    background-color: var(--yellowOp);
+    border: 1px solid var(--yellow);
+    border-radius: var(--radius-xl);
+    color: var(--text);
+}
+
+.yellowCircleBig{
+    margin-left: 4px;
+    width: 21px;
+    height: 21px;
+    background-color: var(--yellow);
+    border-radius: 100%;
+}
+
+
+.yellowTagBig{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 23px;
+    gap: 3px;
+    width: 152px;
+    height: 40px;
+    background-color: var(--yellowOp);
+    border: 1px solid var(--yellow);
+    border-radius: var(--radius-xl);
+    color: var(--text);
+}
+
+/** Yellow Tag END **/
+
+/** Blue Tag **/
+
+.blueCircleSmall{
+    margin-left: 2px;
+    width: 11px;
+    height: 11px;
+    background-color: var(--blue);
+    border-radius: 100%;
+}
+
+
+.blueTagSmall{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3px;
+    width: 88px;
+    height: 17px;
+    background-color: var(--blueOp);
+    border: 1px solid var(--blue);
+    border-radius: var(--radius-xl);
+    color: var(--text);
+}
+
+.blueCircleBig{
+    margin-left: 4px;
+    width: 21px;
+    height: 21px;
+    background-color: var(--blue);
+    border-radius: 100%;
+}
+
+
+.blueTagBig{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 23px;
+    gap: 3px;
+    width: 152px;
+    height: 40px;
+    background-color: var(--blueOp);
+    border: 1px solid var(--blue);
+    border-radius: var(--radius-xl);
+    color: var(--text);
+}
+
+/** Blue Tag END **/
+
+
+/** Red Tag **/
+
+.redCircleSmall{
+    margin-left: 2px;
+    width: 11px;
+    height: 11px;
+    background-color: var(--red);
+    border-radius: 100%;
+}
+
+
+.redTagSmall{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3px;
+    width: 88px;
+    height: 17px;
+    background-color: var(--redOp);
+    border: 1px solid var(--red);
+    border-radius: var(--radius-xl);
+    color: var(--text);
+}
+
+.redCircleBig{
+    margin-left: 4px;
+    width: 21px;
+    height: 21px;
+    background-color: var(--red);
+    border-radius: 100%;
+}
+
+
+.redTagBig{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 23px;
+    gap: 3px;
+    width: 152px;
+    height: 40px;
+    background-color: var(--redOp);
+    border: 1px solid var(--red);
+    border-radius: var(--radius-xl);
+    color: var(--text);
+}
+
+/** Red Tag END **/
+
 
 /*! ------------------------ */
 /*! Tags END */
